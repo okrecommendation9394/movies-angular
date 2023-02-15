@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+h2 {
+  margin: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+input {
+  width: 15%;
+  height: 20px;
+  border-radius: 8px;
+  border: 1px salmon solid;
+  background-color: rgb(242, 230, 215, 0.5);
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.2rem;
+}
+button {
+  border-radius: 8px;
+  border: none;
+  background-color: salmon;
+  padding: 0.4rem;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}

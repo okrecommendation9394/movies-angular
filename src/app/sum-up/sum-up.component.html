@@ -1,0 +1,9 @@
+<h2>Calculate</h2>
+<input type="text" [(ngModel)]="input1" placeholder="Movie name..." />
+<input type="text" [(ngModel)]="input2" placeholder="Movie name..." />
+<input type="text" [(ngModel)]="input3" placeholder="Movie name..." />
+<button type="button" #sumButton>Calculate</button>
+<div *ngIf="movie$ | async as movies" class="sum">
+  <div>{{ totalRuntime }} Minutes</div>
+  <div>Sum of population:{{ sumOfPopulation }}</div>
+</div>
