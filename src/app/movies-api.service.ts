@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map, forkJoin, from } from 'rxjs';
 import { Movie, Country, CountryInfo } from './movies.model';
-
 const BASE_URL_COUNTRIES = 'https://restcountries.com/v3.1/name/';
 @Injectable({
   providedIn: 'root',
@@ -19,9 +18,10 @@ export class MoviesApiService {
     const urls = names.map((name) => BASE_URL_COUNTRIES + name);
     return forkJoin(
       urls.map((url) =>
-        this.http.get(url).pipe(
+        this.http.get<CountryInfo>(url).pipe(
           map((value: any) => {
             return {
+              name: value[0].name.common,
               flagUrl: value[0].flags.png,
               currency: value[0].currencies,
               population: value[0].population,
@@ -30,17 +30,14 @@ export class MoviesApiService {
         )
       )
     );
-    // return this.http
-    //   .get<Country[]>(
-    //     `https://restcountries.com/v3.1/name/${name}?fullText=true`
-    //   )
-    //   .pipe(
-    //     map((value) => {
-    //       return {
-    //         flagUrl: value[0].flags.png,
-    //         currency: value[0].currencies,
-    //       };
-    //     })
-    //   );
+  }
+  getSavedMovies(): Observable<Movie[]> {
+    return this.http.get<Movie[]>(`http://localhost:3000/movies`);
+  }
+  addNewMovie(movie: Movie): Observable<Movie> {
+    return this.http.post<Movie>(`http://localhost:3000/movies`, movie);
+  }
+  deleteMovieFromList(movieId: number) {
+    return this.http.delete(`http://localhost:3000/movies/${movieId}`);
   }
 }

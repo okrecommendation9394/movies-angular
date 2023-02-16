@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  background-color: rgb(14, 120, 14);
+  border-radius: 8px;
+  padding: 1rem;
+}
+h1 {
+  color: salmon;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.search {
+  margin: auto;
+  width: 40%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  &__button {
+    width: 90px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__input {
+    width: 80%;
+  }
+}
+.listBtn {
+  display: flex;
+  justify-content: space-evenly;
+}
+.movies {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 3rem;
+  margin: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  &__info {
+    width: 500px;
+  }
+}
+.flag {
+  height: 2rem;
+  width: 2rem;
+}

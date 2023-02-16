@@ -17,26 +17,6 @@ import {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit, AfterViewInit {
-  @ViewChild('searchButton') searchButton: any;
-  search: FormControl = new FormControl();
-  movieName: string = '';
-  movie$: Observable<Movie> | undefined;
-  countries$: any | undefined;
-  date = new Date();
+export class AppComponent {
   constructor(private moviesApi: MoviesApiService) {}
-  ngOnInit() {}
-  ngAfterViewInit(): void {
-    this.movie$ = fromEvent(this.searchButton.nativeElement, 'click').pipe(
-      switchMap(() => this.moviesApi.getMovie(this.movieName)),
-      distinctUntilChanged(),
-      debounceTime(1000)
-    );
-    this.countries$ = this.movie$
-      .pipe(
-        map((movie) => movie.Country.split(', ')),
-        switchMap((countries) => this.moviesApi.getCountry(countries))
-      )
-      .subscribe((d) => console.log(d));
-  }
 }

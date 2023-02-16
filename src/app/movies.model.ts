@@ -4,6 +4,10 @@ export interface Movie {
   Year: string;
   Country: string;
   Runtime: string;
+  Poster: string;
+  Plot: string;
+  id: number;
+  UserReview?: string;
 }
 export interface Country {
   flags: {
@@ -14,6 +18,7 @@ export interface Country {
   population: number;
 }
 export interface CountryInfo {
+  name: string;
   flagUrl: string;
   currency: object;
   population: number;

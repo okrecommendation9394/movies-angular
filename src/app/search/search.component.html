@@ -1,0 +1,43 @@
+<header>
+  <h1>Movies</h1>
+  <div class="search">
+    <input
+      type="text"
+      [formControl]="search"
+      [(ngModel)]="movieName"
+      placeholder="Movie name..."
+      class="search__input"
+    />
+    <button type="button" #searchButton class="search__button">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <span>Search</span>
+    </button>
+  </div>
+  <button class="listBtn" routerLink="/list">
+    <i class="fa-solid fa-list"></i>
+    <span>Your List</span>
+  </button>
+</header>
+<div *ngIf="movie$ | async as movie" class="movies">
+  <div class="movies__poster">
+    <img src="{{ movie.Poster }}" alt="" />
+  </div>
+  <div class="movies__info">
+    <h4>{{ movie.Title }}</h4>
+    <div>
+      The movie was released {{ date.getFullYear() - +movie.Year }} years ago
+    </div>
+    <div>{{ movie.Actors | extractNames }}</div>
+    <div *ngFor="let country of countries$ | async">
+      <img src="{{ country.flagUrl }}" alt="" class="flag" />
+      <div>Currency: {{ country.currency | getCurrency }}</div>
+    </div>
+    <p><span>Plot: </span>{{ movie.Plot }}</p>
+  </div>
+  <button (click)="addToList(movie)">
+    <i class="fa-regular fa-plus"></i>
+    <span>Add to the list</span>
+  </button>
+</div>
+<hr />
+<app-sum-up></app-sum-up>
