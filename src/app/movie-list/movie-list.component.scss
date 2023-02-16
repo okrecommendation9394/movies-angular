@@ -1,10 +1,7 @@
-// i {
-//   width: 1rem;
-//   height: 1rem;
-//   color: black;
-// }
 .movies-container {
   display: flex;
+  flex-direction: column;
+  width: 80%;
   &__movie {
     display: flex;
     flex-direction: column;
@@ -25,6 +22,8 @@
     img {
       height: 100%;
     }
+    display: flex;
+    column-gap: 3rem;
   }
   &__buttons {
     display: flex;
@@ -41,5 +40,21 @@
     margin: 0 0.3rem;
     justify-self: flex-start;
     width: 5rem;
+  }
+  &__review {
+    width: 30rem;
+    background-color: rgb(247, 154, 143, 0.7);
+  }
+}
+.review {
+  display: flex;
+  column-gap: 1rem;
+  textarea {
+    width: 30rem;
+  }
+  button {
+    align-self: flex-start;
+    background-color: rgb(130, 130, 214);
+    color: wheat;
   }
 }

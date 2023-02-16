@@ -13,7 +13,7 @@ export class MoviesApiService {
       `https://www.omdbapi.com/?t=${name}&apikey=31bb3c78`
     );
   }
-  getCountry(names: string[]) {
+  getCountry(names: string[]): Observable<CountryInfo[]> {
     const productionCountries: CountryInfo[] = [];
     const urls = names.map((name) => BASE_URL_COUNTRIES + name);
     return forkJoin(
@@ -38,6 +38,9 @@ export class MoviesApiService {
     return this.http.post<Movie>(`http://localhost:3000/movies`, movie);
   }
   deleteMovieFromList(movieId: number) {
-    return this.http.delete(`http://localhost:3000/movies/${movieId}`);
+    return this.http.delete<Movie>(`http://localhost:3000/movies/${movieId}`);
+  }
+  addReview(id: number, movie: Movie) {
+    return this.http.patch(`http://localhost:3000/movies/${id}`, movie);
   }
 }

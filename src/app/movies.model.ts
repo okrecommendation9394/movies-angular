@@ -8,6 +8,7 @@ export interface Movie {
   Plot: string;
   id: number;
   UserReview?: string;
+  countryInfo?: CountryInfo[];
 }
 export interface Country {
   flags: {
@@ -20,6 +21,6 @@ export interface Country {
 export interface CountryInfo {
   name: string;
   flagUrl: string;
-  currency: object;
+  currency: any;
   population: number;
 }

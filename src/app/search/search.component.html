@@ -8,7 +8,12 @@
       placeholder="Movie name..."
       class="search__input"
     />
-    <button type="button" #searchButton class="search__button">
+    <button
+      type="button"
+      (click)="searchMovies()"
+      #searchButton
+      class="search__button"
+    >
       <i class="fa-solid fa-magnifying-glass"></i>
       <span>Search</span>
     </button>
@@ -28,7 +33,7 @@
       The movie was released {{ date.getFullYear() - +movie.Year }} years ago
     </div>
     <div>{{ movie.Actors | extractNames }}</div>
-    <div *ngFor="let country of countries$ | async">
+    <div *ngFor="let country of movie.countryInfo">
       <img src="{{ country.flagUrl }}" alt="" class="flag" />
       <div>Currency: {{ country.currency | getCurrency }}</div>
     </div>

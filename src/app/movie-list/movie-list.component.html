@@ -8,9 +8,30 @@
     <div class="movies-container__year">{{ movie.Year }}</div>
     <div class="movies-container__poster">
       <img src="{{ movie.Poster }}" alt="" />
+      <div *ngIf="selectedMovieId == movie.id">
+        <div class="review">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your review"
+            [(ngModel)]="userReview"
+          ></textarea>
+          <button type="button" (click)="addReview(movie.id, movie)">
+            Send
+          </button>
+        </div>
+      </div>
+      <div
+        *ngIf="movie.UserReview && !selectedMovieId"
+        class="movies-container__review"
+      >
+        Your review: {{ movie.UserReview }}
+      </div>
     </div>
     <div class="movies-container__buttons">
-      <button type="button">
+      <button type="button" (click)="enableReview(movie.id)">
         <span>Add Review</span>
         <i class="fa-sharp fa-solid fa-comment-plus"></i>
       </button>

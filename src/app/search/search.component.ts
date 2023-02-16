@@ -11,6 +11,7 @@ import {
   distinctUntilChanged,
   from,
   forkJoin,
+  tap,
 } from 'rxjs';
 @Component({
   selector: 'app-search',
@@ -29,16 +30,15 @@ export class SearchComponent {
     this.moviesApi.addNewMovie(movie).subscribe((m) => console.log(m));
   }
   ngOnInit() {}
-  ngAfterViewInit(): void {
-    this.movie$ = fromEvent(this.searchButton.nativeElement, 'click').pipe(
-      switchMap(() => this.moviesApi.getMovie(this.movieName)),
-      distinctUntilChanged(),
-      debounceTime(1000)
+  searchMovies() {
+    this.movie$ = this.moviesApi.getMovie(this.movieName).pipe(
+      switchMap((movieData) => {
+        return this.moviesApi
+          .getCountry(movieData.Country.split(', '))
+          .pipe(
+            map((countryData) => ({ countryInfo: countryData, ...movieData }))
+          );
+      })
     );
-    this.countries$ = this.movie$.pipe(
-      map((movie) => movie.Country.split(', ')),
-      switchMap((countries) => this.moviesApi.getCountry(countries))
-    );
-    //.subscribe((d) => console.log(d));
   }
 }
