@@ -1,0 +1,32 @@
+.movie-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20rem;
+  transform: translate(-50%, -50%);
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  row-gap: 0.4rem;
+  color: white;
+  span {
+    font-weight: 900;
+    color: salmon;
+  }
+  &__img {
+    max-width: 70%;
+    height: auto;
+  }
+  &__title {
+    font-weight: 900;
+    color: salmon;
+  }
+  &__actors {
+    justify-self: flex-start;
+  }
+}

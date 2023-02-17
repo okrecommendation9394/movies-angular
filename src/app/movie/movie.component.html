@@ -1,0 +1,15 @@
+<div class="body">
+  <button routerLink="/list">
+    <i class="fa-solid fa-backward"></i>
+    <span>Go back</span>
+  </button>
+  <div class="movie-wrapper">
+    <div class="movie-wrapper__title">{{ movie?.Title }}</div>
+    <div class="movie-wrapper__year">{{ movie?.Year }}</div>
+    <img src="{{ movie?.Poster }}" alt="" class="movie-wrapper__img" />
+    <div class="movie-wrapper__actors">
+      <span>Actors: </span>{{ movie?.Actors }}
+    </div>
+    <div class="movie-wrapper__plot"><span>Plot: </span>{{ movie?.Plot }}</div>
+  </div>
+</div>

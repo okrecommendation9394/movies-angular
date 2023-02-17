@@ -172,7 +172,7 @@
       "Website": "N/A",
       "Response": "True",
       "id": 6,
-      "UserReview": "kkk"
+      "UserReview": "Who's the real parasite ?"
     },
     {
       "countryInfo": [
@@ -188,58 +188,163 @@
           "population": 106290
         }
       ],
-      "Title": "Avatar",
-      "Year": "2009",
+      "Title": "Gone Girl",
+      "Year": "2014",
+      "Rated": "R",
+      "Released": "03 Oct 2014",
+      "Runtime": "149 min",
+      "Genre": "Drama, Mystery, Thriller",
+      "Director": "David Fincher",
+      "Writer": "Gillian Flynn",
+      "Actors": "Ben Affleck, Rosamund Pike, Neil Patrick Harris",
+      "Plot": "With his wife's disappearance having become the focus of an intense media circus, a man sees the spotlight turned on him when it's suspected that he may not be innocent.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "Nominated for 1 Oscar. 64 wins & 188 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTk0MDQ3MzAzOV5BMl5BanBnXkFtZTgwNzU1NzE3MjE@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.1/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "88%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "79/100"
+        }
+      ],
+      "Metascore": "79",
+      "imdbRating": "8.1",
+      "imdbVotes": "991,153",
+      "imdbID": "tt2267998",
+      "Type": "movie",
+      "DVD": "13 Jan 2015",
+      "BoxOffice": "$167,767,189",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": 9,
+      "UserReview": "Cool girl"
+    },
+    {
+      "countryInfo": [
+        {
+          "name": "United States Virgin Islands",
+          "flagUrl": "https://flagcdn.com/w320/vi.png",
+          "currency": {
+            "USD": {
+              "name": "United States dollar",
+              "symbol": "$"
+            }
+          },
+          "population": 106290
+        }
+      ],
+      "Title": "Fantastic Fungi",
+      "Year": "2019",
+      "Rated": "Not Rated",
+      "Released": "11 Oct 2019",
+      "Runtime": "81 min",
+      "Genre": "Documentary",
+      "Director": "Louie Schwartzberg",
+      "Writer": "Mark Monroe",
+      "Actors": "Brie Larson, Andrew Weil, Giuliana Furci",
+      "Plot": "Fantastic Fungi is a descriptive time-lapse journey about the magical, mysterious and medicinal world of fungi and their power to heal, sustain and contribute to the regeneration of life on Earth that began 3.5 billion years ago.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "1 nomination",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYmVhZGYwNjgtMzMzYi00ZDAwLTk5YmYtMzVhZDVjMjhiOWQyXkEyXkFqcGdeQXVyMTc3MTI1NzE@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.4/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "100%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "70/100"
+        }
+      ],
+      "Metascore": "70",
+      "imdbRating": "7.4",
+      "imdbVotes": "9,721",
+      "imdbID": "tt8258074",
+      "Type": "movie",
+      "DVD": "07 Aug 2020",
+      "BoxOffice": "$1,788,322",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": 10
+    },
+    {
+      "countryInfo": [
+        {
+          "name": "United States Virgin Islands",
+          "flagUrl": "https://flagcdn.com/w320/vi.png",
+          "currency": {
+            "USD": {
+              "name": "United States dollar",
+              "symbol": "$"
+            }
+          },
+          "population": 106290
+        }
+      ],
+      "Title": "Clueless",
+      "Year": "1995",
       "Rated": "PG-13",
-      "Released": "18 Dec 2009",
-      "Runtime": "162 min",
-      "Genre": "Action, Adventure, Fantasy",
-      "Director": "James Cameron",
-      "Writer": "James Cameron",
-      "Actors": "Sam Worthington, Zoe Saldana, Sigourney Weaver",
-      "Plot": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+      "Released": "19 Jul 1995",
+      "Runtime": "97 min",
+      "Genre": "Comedy, Romance",
+      "Director": "Amy Heckerling",
+      "Writer": "Amy Heckerling",
+      "Actors": "Alicia Silverstone, Stacey Dash, Brittany Murphy",
+      "Plot": "Shallow, rich and socially successful Cher is at the top of her Beverly Hills high school's pecking scale. Seeing herself as a matchmaker, Cher first coaxes two teachers into dating each other.",
       "Language": "English, Spanish",
       "Country": "United States",
-      "Awards": "Won 3 Oscars. 89 wins & 131 nominations total",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
+      "Awards": "6 wins & 12 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMzBmOGQ0NWItOTZjZC00ZDAxLTgyOTEtODJiYWQ2YWNiYWVjXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg",
       "Ratings": [
         {
           "Source": "Internet Movie Database",
-          "Value": "7.9/10"
-        },
-        {
-          "Source": "Rotten Tomatoes",
-          "Value": "82%"
+          "Value": "6.9/10"
         },
         {
           "Source": "Metacritic",
-          "Value": "83/100"
+          "Value": "68/100"
         }
       ],
-      "Metascore": "83",
-      "imdbRating": "7.9",
-      "imdbVotes": "1,313,610",
-      "imdbID": "tt0499549",
+      "Metascore": "68",
+      "imdbRating": "6.9",
+      "imdbVotes": "223,648",
+      "imdbID": "tt0112697",
       "Type": "movie",
-      "DVD": "22 Apr 2010",
-      "BoxOffice": "$785,221,649",
+      "DVD": "N/A",
+      "BoxOffice": "$56,631,572",
       "Production": "N/A",
       "Website": "N/A",
       "Response": "True",
-      "id": 7
+      "id": 11
     },
     {
       "countryInfo": [
         {
-          "name": "Canada",
-          "flagUrl": "https://flagcdn.com/w320/ca.png",
+          "name": "United Kingdom",
+          "flagUrl": "https://flagcdn.com/w320/gb.png",
           "currency": {
-            "CAD": {
-              "name": "Canadian dollar",
-              "symbol": "$"
+            "GBP": {
+              "name": "British pound",
+              "symbol": "£"
             }
           },
-          "population": 38005238
+          "population": 67215293
         },
         {
           "name": "United States Virgin Islands",
@@ -253,45 +358,156 @@
           "population": 106290
         }
       ],
-      "Title": "Dune",
-      "Year": "2021",
+      "Title": "Harry Potter and the Deathly Hallows: Part 2",
+      "Year": "2011",
       "Rated": "PG-13",
-      "Released": "22 Oct 2021",
-      "Runtime": "155 min",
-      "Genre": "Action, Adventure, Drama",
-      "Director": "Denis Villeneuve",
-      "Writer": "Jon Spaihts, Denis Villeneuve, Eric Roth",
-      "Actors": "Timothée Chalamet, Rebecca Ferguson, Zendaya",
-      "Plot": "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future.",
-      "Language": "English, Mandarin",
-      "Country": "Canada, United States",
-      "Awards": "Won 6 Oscars. 168 wins & 281 nominations total",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+      "Released": "15 Jul 2011",
+      "Runtime": "130 min",
+      "Genre": "Adventure, Family, Fantasy",
+      "Director": "David Yates",
+      "Writer": "Steve Kloves, J.K. Rowling",
+      "Actors": "Daniel Radcliffe, Emma Watson, Rupert Grint",
+      "Plot": "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
+      "Language": "English, Latin",
+      "Country": "United Kingdom, United States",
+      "Awards": "Nominated for 3 Oscars. 47 wins & 94 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMGVmMWNiMDktYjQ0Mi00MWIxLTk0N2UtN2ZlYTdkN2IzNDNlXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
       "Ratings": [
         {
           "Source": "Internet Movie Database",
-          "Value": "8.0/10"
+          "Value": "8.1/10"
         },
         {
           "Source": "Rotten Tomatoes",
-          "Value": "83%"
+          "Value": "96%"
         },
         {
           "Source": "Metacritic",
-          "Value": "74/100"
+          "Value": "85/100"
         }
       ],
-      "Metascore": "74",
-      "imdbRating": "8.0",
-      "imdbVotes": "642,216",
-      "imdbID": "tt1160419",
+      "Metascore": "85",
+      "imdbRating": "8.1",
+      "imdbVotes": "882,427",
+      "imdbID": "tt1201607",
       "Type": "movie",
-      "DVD": "22 Oct 2021",
-      "BoxOffice": "$108,327,830",
+      "DVD": "11 Nov 2011",
+      "BoxOffice": "$381,447,587",
       "Production": "N/A",
       "Website": "N/A",
       "Response": "True",
-      "id": 8
+      "id": 12,
+      "UserReview": "Voldiii winnn"
+    },
+    {
+      "countryInfo": [
+        {
+          "name": "United Kingdom",
+          "flagUrl": "https://flagcdn.com/w320/gb.png",
+          "currency": {
+            "GBP": {
+              "name": "British pound",
+              "symbol": "£"
+            }
+          },
+          "population": 67215293
+        },
+        {
+          "name": "United States Virgin Islands",
+          "flagUrl": "https://flagcdn.com/w320/vi.png",
+          "currency": {
+            "USD": {
+              "name": "United States dollar",
+              "symbol": "$"
+            }
+          },
+          "population": 106290
+        }
+      ],
+      "Title": "Dracula",
+      "Year": "1992",
+      "Rated": "R",
+      "Released": "13 Nov 1992",
+      "Runtime": "128 min",
+      "Genre": "Drama, Fantasy, Horror",
+      "Director": "Francis Ford Coppola",
+      "Writer": "Bram Stoker, James V. Hart",
+      "Actors": "Gary Oldman, Winona Ryder, Anthony Hopkins",
+      "Plot": "The centuries old vampire Count Dracula comes to England to seduce his barrister Jonathan Harker's fiancée Mina Murray and inflict havoc in the foreign land.",
+      "Language": "English, Romanian, Greek, Bulgarian, Latin",
+      "Country": "United Kingdom, United States",
+      "Awards": "Won 3 Oscars. 24 wins & 25 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNjcyMDZlMTktYTIxOC00ZWFhLWJkYzgtNWNiYjAwYTFkNjIyXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.4/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "77%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "57/100"
+        }
+      ],
+      "Metascore": "57",
+      "imdbRating": "7.4",
+      "imdbVotes": "221,713",
+      "imdbID": "tt0103874",
+      "Type": "movie",
+      "DVD": "11 Dec 2001",
+      "BoxOffice": "$82,522,790",
+      "Production": "N/A",
+      "Website": "N/A",
+      "Response": "True",
+      "id": 13,
+      "UserReview": "Hot Vampiressssssssss"
+    },
+    {
+      "countryInfo": [
+        {
+          "name": "United States Virgin Islands",
+          "flagUrl": "https://flagcdn.com/w320/vi.png",
+          "currency": {
+            "USD": {
+              "name": "United States dollar",
+              "symbol": "$"
+            }
+          },
+          "population": 106290
+        }
+      ],
+      "Title": "The Vampire Diaries",
+      "Year": "2009–2017",
+      "Rated": "TV-14",
+      "Released": "10 Sep 2009",
+      "Runtime": "43 min",
+      "Genre": "Drama, Fantasy, Horror",
+      "Director": "N/A",
+      "Writer": "Julie Plec, Kevin Williamson",
+      "Actors": "Nina Dobrev, Paul Wesley, Ian Somerhalder",
+      "Plot": "The lives, loves, dangers and disasters in the town, Mystic Falls, Virginia. Creatures of unspeakable horror lurk beneath this town as a teenage girl is suddenly torn between two vampire brothers.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "38 wins & 67 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMDk3YzgxNDQtNTEzOS00NDMyLWFlYmYtYTZlMDk1NDkxNmMyXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.7/10"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "7.7",
+      "imdbVotes": "325,053",
+      "imdbID": "tt1405406",
+      "Type": "series",
+      "totalSeasons": "8",
+      "Response": "True",
+      "id": 14,
+      "UserReview": "Damonnnnnnnnnnnnnnn <3 "
     }
   ]
 }

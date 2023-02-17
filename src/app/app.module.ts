@@ -11,16 +11,7 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import { Route, RouterModule, Routes } from '@angular/router';
 import { SearchComponent } from './search/search.component';
 import { ToastrModule } from 'ngx-toastr';
-const appRoutes: Routes = [
-  {
-    path: '',
-    component: SearchComponent,
-  },
-  {
-    path: 'list',
-    component: MovieListComponent,
-  },
-];
+import { MovieComponent } from './movie/movie.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +20,7 @@ const appRoutes: Routes = [
     GetCurrencyPipe,
     MovieListComponent,
     SearchComponent,
+    MovieComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +28,7 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes),
+    //RouterModule.forRoot(appRoutes),
     ToastrModule.forRoot(),
   ],
   providers: [],

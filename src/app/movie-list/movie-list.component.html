@@ -46,7 +46,10 @@
         <span *ngIf="selectedMovieId == movie.id">Cancel Review</span>
         <i class="fa-sharp fa-solid fa-comment-plus"></i>
       </button>
-      <button class="movies-container__buttons__info">
+      <button
+        class="movies-container__buttons__info"
+        [routerLink]="['/list', movie.Title]"
+      >
         <i class="fa-solid fa-info"></i>
       </button>
     </div>
@@ -56,3 +59,4 @@
     </button>
   </div>
 </div>
+<router-outlet></router-outlet>
