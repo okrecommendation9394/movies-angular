@@ -7,6 +7,7 @@ export interface Movie {
   Poster: string;
   Plot: string;
   id: number;
+  imdbRating: string;
   UserReview?: string;
   countryInfo?: CountryInfo[];
 }

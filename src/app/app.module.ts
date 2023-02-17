@@ -10,6 +10,7 @@ import { GetCurrencyPipe } from './get-currency.pipe';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { Route, RouterModule, Routes } from '@angular/router';
 import { SearchComponent } from './search/search.component';
+import { ToastrModule } from 'ngx-toastr';
 const appRoutes: Routes = [
   {
     path: '',
@@ -36,6 +37,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

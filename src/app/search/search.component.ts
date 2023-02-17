@@ -13,6 +13,8 @@ import {
   forkJoin,
   tap,
 } from 'rxjs';
+import { NotificationService } from '../notification.service';
+import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -25,9 +27,19 @@ export class SearchComponent {
   movie$: Observable<Movie> | undefined;
   countries$: any | undefined;
   date = new Date();
-  constructor(private moviesApi: MoviesApiService) {}
+  constructor(
+    private moviesApi: MoviesApiService,
+    private notifyService: NotificationService
+  ) {}
   addToList(movie: Movie) {
-    this.moviesApi.addNewMovie(movie).subscribe((m) => console.log(m));
+    this.moviesApi
+      .addNewMovie(movie)
+      .subscribe(() =>
+        this.notifyService.showSuccess(
+          'The Movie was added to the list successfully',
+          'Success'
+        )
+      );
   }
   ngOnInit() {}
   searchMovies() {

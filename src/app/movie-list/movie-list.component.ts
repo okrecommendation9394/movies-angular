@@ -30,4 +30,7 @@ export class MovieListComponent {
     this.movieApi.addReview(id, movie).subscribe((d) => console.log(d));
     this.selectedMovieId = undefined;
   }
+  deleteReview(movie: Movie) {
+    movie.UserReview = '';
+  }
 }
