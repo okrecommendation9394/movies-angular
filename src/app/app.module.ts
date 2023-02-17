@@ -11,7 +11,7 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import { Route, RouterModule, Routes } from '@angular/router';
 import { SearchComponent } from './search/search.component';
 import { ToastrModule } from 'ngx-toastr';
-import { MovieComponent } from './movie/movie.component';
+import { MovieComponent } from './movie-list/movie/movie.component';
 @NgModule({
   declarations: [
     AppComponent,

@@ -9,8 +9,8 @@
   flex-direction: column;
   padding: 1rem;
   border-radius: 8px;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   row-gap: 0.4rem;
   color: white;
@@ -21,6 +21,8 @@
   &__img {
     max-width: 70%;
     height: auto;
+    align-self: center;
+    justify-self: center;
   }
   &__title {
     font-weight: 900;

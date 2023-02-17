@@ -7,9 +7,22 @@
     <div class="movie-wrapper__title">{{ movie?.Title }}</div>
     <div class="movie-wrapper__year">{{ movie?.Year }}</div>
     <img src="{{ movie?.Poster }}" alt="" class="movie-wrapper__img" />
+    <div class="movie-wrapper__writer">
+      <span>Writers: </span>{{ movie?.Writer }}
+    </div>
+    <div class="movie-wrapper__genre">
+      <span>Genre: </span>{{ movie?.Genre }}
+    </div>
     <div class="movie-wrapper__actors">
       <span>Actors: </span>{{ movie?.Actors }}
     </div>
     <div class="movie-wrapper__plot"><span>Plot: </span>{{ movie?.Plot }}</div>
+    <!-- <div class="movie-wrapper__review">
+      <span>Your Review:</span>{{ userReview }}
+    </div> -->
+    <div class="movie-wrapper__rating">
+      <span>Audience Score: </span>{{ movie?.imdbRating
+      }}<i class="fa-solid fa-star"></i>
+    </div>
   </div>
 </div>

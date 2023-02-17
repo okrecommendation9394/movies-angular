@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SearchComponent } from './search/search.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
-import { MovieComponent } from './movie/movie.component';
+import { MovieComponent } from './movie-list/movie/movie.component';
 
 const routes: Routes = [
   {

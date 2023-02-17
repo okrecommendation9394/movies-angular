@@ -1,14 +1,21 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+  ViewChild,
+  AfterViewInit,
+  OnInit,
+  AfterContentInit,
+} from '@angular/core';
 import { MoviesApiService } from '../movies-api.service';
 import { Movie } from '../movies.model';
 import { Observable } from 'rxjs';
-
+import { MovieComponent } from './movie/movie.component';
 @Component({
   selector: 'app-movie-list',
   templateUrl: './movie-list.component.html',
   styleUrls: ['./movie-list.component.scss'],
 })
-export class MovieListComponent {
+export class MovieListComponent implements OnInit {
+  @ViewChild(MovieComponent) movieComponent: MovieComponent | undefined;
   movieList$: Observable<Movie[]> | undefined;
   selectedMovieId: number | undefined;
   userReview: string | undefined;
@@ -17,6 +24,9 @@ export class MovieListComponent {
     this.movieList$ = this.movieApi.getSavedMovies();
     this.movieApi.getSavedMovies().subscribe((d) => console.log(d));
   }
+  // ngAfterContentInit(): void {
+  //   this.movieComponent!.userReview = this.userReview;
+  // }
   deleteMovie(movieId: number) {
     this.movieApi
       .deleteMovieFromList(movieId)
