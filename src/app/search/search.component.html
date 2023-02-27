@@ -22,6 +22,10 @@
     <i class="fa-solid fa-list"></i>
     <span>Your List</span>
   </button>
+  <button routerLink="/create-movie">
+    <i class="fa-solid fa-pen-nib"></i>
+    <span>Create Your Own Movie</span>
+  </button>
 </header>
 <div *ngIf="movie$ | async as movie" class="movies">
   <div class="movies__poster">

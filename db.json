@@ -1,37 +1,6 @@
 {
   "movies": [
     {
-      "Title": "Rick and Morty",
-      "Year": "2013–",
-      "Rated": "TV-14",
-      "Released": "02 Dec 2013",
-      "Runtime": "23 min",
-      "Genre": "Animation, Adventure, Comedy",
-      "Director": "N/A",
-      "Writer": "Dan Harmon, Justin Roiland",
-      "Actors": "Justin Roiland, Chris Parnell, Spencer Grammer",
-      "Plot": "An animated series that follows the exploits of a super scientist and his not-so-bright grandson.",
-      "Language": "English",
-      "Country": "United States",
-      "Awards": "Won 2 Primetime Emmys. 18 wins & 36 nominations total",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_SX300.jpg",
-      "Ratings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "9.1/10"
-        }
-      ],
-      "Metascore": "N/A",
-      "imdbRating": "9.1",
-      "imdbVotes": "533,595",
-      "imdbID": "tt2861424",
-      "Type": "series",
-      "totalSeasons": "6",
-      "Response": "True",
-      "id": 1,
-      "UserReview": "Get shwiftyyyyyy"
-    },
-    {
       "countryInfo": [
         {
           "name": "United States Virgin Islands",
@@ -45,79 +14,45 @@
           "population": 106290
         }
       ],
-      "Title": "BoJack Horseman",
-      "Year": "2014–2020",
-      "Rated": "TV-MA",
-      "Released": "22 Aug 2014",
-      "Runtime": "25 min",
-      "Genre": "Animation, Comedy, Drama",
-      "Director": "N/A",
-      "Writer": "Raphael Bob-Waksberg",
-      "Actors": "Will Arnett, Amy Sedaris, Alison Brie",
-      "Plot": "BoJack Horseman was the star of the hit television show \"Horsin' Around\" in the '80s and '90s, but now he's washed up, living in Hollywood, complaining about everything, and wearing colorful sweaters.",
+      "Title": "Gone Girl",
+      "Year": "2014",
+      "Rated": "R",
+      "Released": "03 Oct 2014",
+      "Runtime": "149 min",
+      "Genre": "Drama, Mystery, Thriller",
+      "Director": "David Fincher",
+      "Writer": "Gillian Flynn",
+      "Actors": "Ben Affleck, Rosamund Pike, Neil Patrick Harris",
+      "Plot": "With his wife's disappearance having become the focus of an intense media circus, a man sees the spotlight turned on him when it's suspected that he may not be innocent.",
       "Language": "English",
       "Country": "United States",
-      "Awards": "Nominated for 3 Primetime Emmys. 35 wins & 46 nominations total",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BYWQwMDNkM2MtODU4OS00OTY3LTgwOTItNjE2Yzc0MzRkMDllXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+      "Awards": "Nominated for 1 Oscar. 64 wins & 188 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTk0MDQ3MzAzOV5BMl5BanBnXkFtZTgwNzU1NzE3MjE@._V1_SX300.jpg",
       "Ratings": [
         {
           "Source": "Internet Movie Database",
-          "Value": "8.8/10"
-        }
-      ],
-      "Metascore": "N/A",
-      "imdbRating": "8.8",
-      "imdbVotes": "160,954",
-      "imdbID": "tt3398228",
-      "Type": "series",
-      "totalSeasons": "6",
-      "Response": "True",
-      "id": 4,
-      "UserReview": "I don't forgive you"
-    },
-    {
-      "countryInfo": [
+          "Value": "8.1/10"
+        },
         {
-          "name": "Japan",
-          "flagUrl": "https://flagcdn.com/w320/jp.png",
-          "currency": {
-            "JPY": {
-              "name": "Japanese yen",
-              "symbol": "¥"
-            }
-          },
-          "population": 125836021
-        }
-      ],
-      "Title": "Attack on Titan",
-      "Year": "2013–2023",
-      "Rated": "TV-MA",
-      "Released": "28 Sep 2013",
-      "Runtime": "24 min",
-      "Genre": "Animation, Action, Adventure",
-      "Director": "N/A",
-      "Writer": "N/A",
-      "Actors": "Josh Grelle, Bryce Papenbrook, Yûki Kaji",
-      "Plot": "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
-      "Language": "Japanese",
-      "Country": "Japan",
-      "Awards": "15 wins & 36 nominations",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMGY3Mzg3M2UtNzYxNi00ZDYzLTlhMTQtMjkzZTA2MWQ4NjA0XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg",
-      "Ratings": [
+          "Source": "Rotten Tomatoes",
+          "Value": "88%"
+        },
         {
-          "Source": "Internet Movie Database",
-          "Value": "9.0/10"
+          "Source": "Metacritic",
+          "Value": "79/100"
         }
       ],
-      "Metascore": "N/A",
-      "imdbRating": "9.0",
-      "imdbVotes": "379,243",
-      "imdbID": "tt2560140",
-      "Type": "series",
-      "totalSeasons": "4",
+      "Metascore": "79",
+      "imdbRating": "8.1",
+      "imdbVotes": "991,153",
+      "imdbID": "tt2267998",
+      "Type": "movie",
+      "DVD": "13 Jan 2015",
+      "BoxOffice": "$167,767,189",
+      "Production": "N/A",
+      "Website": "N/A",
       "Response": "True",
-      "id": 5,
-      "UserReview": "shinzou sasageyo"
+      "id": 1
     },
     {
       "countryInfo": [
@@ -171,348 +106,143 @@
       "Production": "N/A",
       "Website": "N/A",
       "Response": "True",
-      "id": 6,
-      "UserReview": "Who's the real parasite ?"
+      "id": 2,
+      "UserReview": "bzzzzzzzzzzz"
+    }
+  ],
+  "userMovies": [
+    {
+      "name": "Dune",
+      "countries": [
+        "Canada",
+        ""
+      ],
+      "premierePlace": "China",
+      "date": "2023-03-10",
+      "genres": [
+        "action",
+        "drama"
+      ],
+      "type": "Movie",
+      "rating": 0,
+      "minutesOf": 77,
+      "id": 1
     },
     {
-      "countryInfo": [
-        {
-          "name": "United States Virgin Islands",
-          "flagUrl": "https://flagcdn.com/w320/vi.png",
-          "currency": {
-            "USD": {
-              "name": "United States dollar",
-              "symbol": "$"
-            }
-          },
-          "population": 106290
-        }
+      "name": "Dune",
+      "countries": [
+        "Canada",
+        ""
       ],
-      "Title": "Gone Girl",
-      "Year": "2014",
-      "Rated": "R",
-      "Released": "03 Oct 2014",
-      "Runtime": "149 min",
-      "Genre": "Drama, Mystery, Thriller",
-      "Director": "David Fincher",
-      "Writer": "Gillian Flynn",
-      "Actors": "Ben Affleck, Rosamund Pike, Neil Patrick Harris",
-      "Plot": "With his wife's disappearance having become the focus of an intense media circus, a man sees the spotlight turned on him when it's suspected that he may not be innocent.",
-      "Language": "English",
-      "Country": "United States",
-      "Awards": "Nominated for 1 Oscar. 64 wins & 188 nominations total",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTk0MDQ3MzAzOV5BMl5BanBnXkFtZTgwNzU1NzE3MjE@._V1_SX300.jpg",
-      "Ratings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "8.1/10"
-        },
-        {
-          "Source": "Rotten Tomatoes",
-          "Value": "88%"
-        },
-        {
-          "Source": "Metacritic",
-          "Value": "79/100"
-        }
+      "premierePlace": "China",
+      "date": "2023-03-10",
+      "genres": [
+        "action",
+        "drama"
       ],
-      "Metascore": "79",
-      "imdbRating": "8.1",
-      "imdbVotes": "991,153",
-      "imdbID": "tt2267998",
-      "Type": "movie",
-      "DVD": "13 Jan 2015",
-      "BoxOffice": "$167,767,189",
-      "Production": "N/A",
-      "Website": "N/A",
-      "Response": "True",
-      "id": 9,
-      "UserReview": "Cool girl"
+      "type": "Movie",
+      "rating": 0,
+      "minutesOf": 77,
+      "id": 2
     },
     {
-      "countryInfo": [
-        {
-          "name": "United States Virgin Islands",
-          "flagUrl": "https://flagcdn.com/w320/vi.png",
-          "currency": {
-            "USD": {
-              "name": "United States dollar",
-              "symbol": "$"
-            }
-          },
-          "population": 106290
-        }
+      "name": "tomato",
+      "countries": [
+        "Germany",
+        "American Samoa",
+        "France"
       ],
-      "Title": "Fantastic Fungi",
-      "Year": "2019",
-      "Rated": "Not Rated",
-      "Released": "11 Oct 2019",
-      "Runtime": "81 min",
-      "Genre": "Documentary",
-      "Director": "Louie Schwartzberg",
-      "Writer": "Mark Monroe",
-      "Actors": "Brie Larson, Andrew Weil, Giuliana Furci",
-      "Plot": "Fantastic Fungi is a descriptive time-lapse journey about the magical, mysterious and medicinal world of fungi and their power to heal, sustain and contribute to the regeneration of life on Earth that began 3.5 billion years ago.",
-      "Language": "English",
-      "Country": "United States",
-      "Awards": "1 nomination",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BYmVhZGYwNjgtMzMzYi00ZDAwLTk5YmYtMzVhZDVjMjhiOWQyXkEyXkFqcGdeQXVyMTc3MTI1NzE@._V1_SX300.jpg",
-      "Ratings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "7.4/10"
-        },
-        {
-          "Source": "Rotten Tomatoes",
-          "Value": "100%"
-        },
-        {
-          "Source": "Metacritic",
-          "Value": "70/100"
-        }
+      "premierePlace": "China",
+      "date": "2023-03-10",
+      "genres": [
+        "sci-fi",
+        "rom-com"
       ],
-      "Metascore": "70",
-      "imdbRating": "7.4",
-      "imdbVotes": "9,721",
-      "imdbID": "tt8258074",
-      "Type": "movie",
-      "DVD": "07 Aug 2020",
-      "BoxOffice": "$1,788,322",
-      "Production": "N/A",
-      "Website": "N/A",
-      "Response": "True",
-      "id": 10
+      "type": "Tv-show",
+      "rating": 0,
+      "numberOfSeries": 56,
+      "id": 3
     },
     {
-      "countryInfo": [
-        {
-          "name": "United Kingdom",
-          "flagUrl": "https://flagcdn.com/w320/gb.png",
-          "currency": {
-            "GBP": {
-              "name": "British pound",
-              "symbol": "£"
-            }
-          },
-          "population": 67215293
-        },
-        {
-          "name": "United States Virgin Islands",
-          "flagUrl": "https://flagcdn.com/w320/vi.png",
-          "currency": {
-            "USD": {
-              "name": "United States dollar",
-              "symbol": "$"
-            }
-          },
-          "population": 106290
-        }
+      "name": "tomato",
+      "countries": [
+        null
       ],
-      "Title": "Harry Potter and the Deathly Hallows: Part 2",
-      "Year": "2011",
-      "Rated": "PG-13",
-      "Released": "15 Jul 2011",
-      "Runtime": "130 min",
-      "Genre": "Adventure, Family, Fantasy",
-      "Director": "David Yates",
-      "Writer": "Steve Kloves, J.K. Rowling",
-      "Actors": "Daniel Radcliffe, Emma Watson, Rupert Grint",
-      "Plot": "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
-      "Language": "English, Latin",
-      "Country": "United Kingdom, United States",
-      "Awards": "Nominated for 3 Oscars. 47 wins & 94 nominations total",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMGVmMWNiMDktYjQ0Mi00MWIxLTk0N2UtN2ZlYTdkN2IzNDNlXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
-      "Ratings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "8.1/10"
-        },
-        {
-          "Source": "Rotten Tomatoes",
-          "Value": "96%"
-        },
-        {
-          "Source": "Metacritic",
-          "Value": "85/100"
-        }
+      "premierePlace": "China",
+      "date": "2023-03-09",
+      "genres": [
+        "Horror"
       ],
-      "Metascore": "85",
-      "imdbRating": "8.1",
-      "imdbVotes": "882,427",
-      "imdbID": "tt1201607",
-      "Type": "movie",
-      "DVD": "11 Nov 2011",
-      "BoxOffice": "$381,447,587",
-      "Production": "N/A",
-      "Website": "N/A",
-      "Response": "True",
-      "id": 12,
-      "UserReview": "Voldiii winnn"
+      "type": "Movie",
+      "rating": 0,
+      "minutesOf": 88,
+      "id": 4
     },
     {
-      "countryInfo": [
-        {
-          "name": "United Kingdom",
-          "flagUrl": "https://flagcdn.com/w320/gb.png",
-          "currency": {
-            "GBP": {
-              "name": "British pound",
-              "symbol": "£"
-            }
-          },
-          "population": 67215293
-        },
-        {
-          "name": "United States Virgin Islands",
-          "flagUrl": "https://flagcdn.com/w320/vi.png",
-          "currency": {
-            "USD": {
-              "name": "United States dollar",
-              "symbol": "$"
-            }
-          },
-          "population": 106290
-        }
+      "name": "tomato",
+      "countries": [
+        "American Samoa",
+        ""
       ],
-      "Title": "Dracula",
-      "Year": "1992",
-      "Rated": "R",
-      "Released": "13 Nov 1992",
-      "Runtime": "128 min",
-      "Genre": "Drama, Fantasy, Horror",
-      "Director": "Francis Ford Coppola",
-      "Writer": "Bram Stoker, James V. Hart",
-      "Actors": "Gary Oldman, Winona Ryder, Anthony Hopkins",
-      "Plot": "The centuries old vampire Count Dracula comes to England to seduce his barrister Jonathan Harker's fiancée Mina Murray and inflict havoc in the foreign land.",
-      "Language": "English, Romanian, Greek, Bulgarian, Latin",
-      "Country": "United Kingdom, United States",
-      "Awards": "Won 3 Oscars. 24 wins & 25 nominations total",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNjcyMDZlMTktYTIxOC00ZWFhLWJkYzgtNWNiYjAwYTFkNjIyXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg",
-      "Ratings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "7.4/10"
-        },
-        {
-          "Source": "Rotten Tomatoes",
-          "Value": "77%"
-        },
-        {
-          "Source": "Metacritic",
-          "Value": "57/100"
-        }
+      "premierePlace": "china",
+      "date": "2023-03-10",
+      "genres": [
+        "sci-fi"
       ],
-      "Metascore": "57",
-      "imdbRating": "7.4",
-      "imdbVotes": "221,713",
-      "imdbID": "tt0103874",
-      "Type": "movie",
-      "DVD": "11 Dec 2001",
-      "BoxOffice": "$82,522,790",
-      "Production": "N/A",
-      "Website": "N/A",
-      "Response": "True",
-      "id": 13,
-      "UserReview": "Hot Vampiressssssssss"
+      "type": "Movie",
+      "rating": 0,
+      "minutesOf": 88,
+      "id": 5
     },
     {
-      "countryInfo": [
-        {
-          "name": "United States Virgin Islands",
-          "flagUrl": "https://flagcdn.com/w320/vi.png",
-          "currency": {
-            "USD": {
-              "name": "United States dollar",
-              "symbol": "$"
-            }
-          },
-          "population": 106290
-        }
+      "name": "tomato",
+      "countries": [
+        "American Samoa",
+        ""
       ],
-      "Title": "The Vampire Diaries",
-      "Year": "2009–2017",
-      "Rated": "TV-14",
-      "Released": "10 Sep 2009",
-      "Runtime": "43 min",
-      "Genre": "Drama, Fantasy, Horror",
-      "Director": "N/A",
-      "Writer": "Julie Plec, Kevin Williamson",
-      "Actors": "Nina Dobrev, Paul Wesley, Ian Somerhalder",
-      "Plot": "The lives, loves, dangers and disasters in the town, Mystic Falls, Virginia. Creatures of unspeakable horror lurk beneath this town as a teenage girl is suddenly torn between two vampire brothers.",
-      "Language": "English",
-      "Country": "United States",
-      "Awards": "38 wins & 67 nominations",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMDk3YzgxNDQtNTEzOS00NDMyLWFlYmYtYTZlMDk1NDkxNmMyXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_SX300.jpg",
-      "Ratings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "7.7/10"
-        }
+      "premierePlace": "china",
+      "date": "2023-03-10",
+      "genres": [
+        "action"
       ],
-      "Metascore": "N/A",
-      "imdbRating": "7.7",
-      "imdbVotes": "325,053",
-      "imdbID": "tt1405406",
-      "Type": "series",
-      "totalSeasons": "8",
-      "Response": "True",
-      "id": 14,
-      "UserReview": "Damonnnnnnnnnnnnnnn <3 "
+      "type": "Movie",
+      "rating": 0,
+      "minutesOf": 77,
+      "id": 6
     },
     {
-      "countryInfo": [
-        {
-          "name": "United States Virgin Islands",
-          "flagUrl": "https://flagcdn.com/w320/vi.png",
-          "currency": {
-            "USD": {
-              "name": "United States dollar",
-              "symbol": "$"
-            }
-          },
-          "population": 106290
-        }
+      "name": "tomato",
+      "countries": [
+        "Canada",
+        ""
       ],
-      "Title": "Where the Crawdads Sing",
-      "Year": "2022",
-      "Rated": "PG-13",
-      "Released": "15 Jul 2022",
-      "Runtime": "125 min",
-      "Genre": "Drama, Mystery, Romance",
-      "Director": "Olivia Newman",
-      "Writer": "Delia Owens, Lucy Alibar",
-      "Actors": "Daisy Edgar-Jones, Taylor John Smith, Harris Dickinson",
-      "Plot": "A woman who raised herself in the marshes of the Deep South becomes a suspect in the murder of a man with whom she was once involved.",
-      "Language": "English",
-      "Country": "United States",
-      "Awards": "9 nominations",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTJmNGJmYTgtYjAxNy00YmMzLTk2YTYtMGIzMmUwNDMyMTY1XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SX300.jpg",
-      "Ratings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "7.1/10"
-        },
-        {
-          "Source": "Rotten Tomatoes",
-          "Value": "34%"
-        },
-        {
-          "Source": "Metacritic",
-          "Value": "43/100"
-        }
+      "premierePlace": "china",
+      "date": "2023-03-02",
+      "genres": [
+        null,
+        "action"
       ],
-      "Metascore": "43",
-      "imdbRating": "7.1",
-      "imdbVotes": "74,855",
-      "imdbID": "tt9411972",
-      "Type": "movie",
-      "DVD": "13 Sep 2022",
-      "BoxOffice": "$90,098,563",
-      "Production": "N/A",
-      "Website": "N/A",
-      "Response": "True",
-      "id": 15,
-      "UserReview": "Predator should die"
+      "type": "Movie",
+      "rating": 4,
+      "minutesOf": 78,
+      "id": 7
+    },
+    {
+      "name": "tomato",
+      "countries": [
+        "Canada",
+        ""
+      ],
+      "premierePlace": "china",
+      "date": "2023-03-02",
+      "genres": [
+        null,
+        "sci-fi"
+      ],
+      "type": "Movie",
+      "rating": 5,
+      "minutesOf": 77,
+      "id": 8
     }
   ]
 }

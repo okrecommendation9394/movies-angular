@@ -1,0 +1,19 @@
+<button (click)="goBack()">Go Back:</button>
+<div class="container">
+  <div *ngFor="let movie of userMovies" class="container__movie">
+    <div><span>Title:</span>{{ movie.name }}</div>
+    <div>{{ movie.type }}</div>
+    <div><span>Release date:</span>{{ movie.date | date }}</div>
+    <div><span>Countries:</span>{{ movie.countries.flat() }}</div>
+    <div><span>Genres:</span>{{ movie.genres.flat() }}</div>
+    <div *ngIf="movie.minutesOf">{{ movie.minutesOf }} minutes</div>
+    <div *ngIf="movie.numberOfSeries">
+      <span> Number of series:</span> {{ movie.numberOfSeries }}
+    </div>
+    <div><span>Premiere place:</span>{{ movie.premierePlace }}</div>
+    <div>
+      <span> Rating: </span>{{ movie.rating }}
+      <i class="fa-solid fa-star"></i>
+    </div>
+  </div>
+</div>

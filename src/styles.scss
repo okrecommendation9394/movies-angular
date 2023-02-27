@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+$base-color: rgb(0, 128, 0);
+$secondary-color: rgb(250, 128, 114);
+$white: white;
+$black: black;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 h2 {
   margin: 1rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -7,7 +16,7 @@ input {
   width: 15%;
   height: 20px;
   border-radius: 8px;
-  border: 1px salmon solid;
+  border: 1px $secondary-color solid;
   background-color: rgb(242, 230, 215, 0.5);
   display: inline-block;
   margin: 1rem;
@@ -16,7 +25,7 @@ input {
 button {
   border-radius: 8px;
   border: none;
-  background-color: salmon;
+  background-color: $secondary-color;
   padding: 0.4rem;
   cursor: pointer;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;

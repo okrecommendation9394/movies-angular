@@ -12,6 +12,9 @@ import { Route, RouterModule, Routes } from '@angular/router';
 import { SearchComponent } from './search/search.component';
 import { ToastrModule } from 'ngx-toastr';
 import { MovieComponent } from './movie-list/movie/movie.component';
+import { CreateMovieComponent } from './create-movie/create-movie.component';
+import { RatingComponent } from './rating/rating.component';
+import { UsermovieListComponent } from './usermovie-list/usermovie-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +24,9 @@ import { MovieComponent } from './movie-list/movie/movie.component';
     MovieListComponent,
     SearchComponent,
     MovieComponent,
+    CreateMovieComponent,
+    RatingComponent,
+    UsermovieListComponent,
   ],
   imports: [
     BrowserModule,

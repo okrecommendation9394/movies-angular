@@ -7,8 +7,9 @@ import {
 } from '@angular/core';
 import { MoviesApiService } from '../movies-api.service';
 import { Movie } from '../movies.model';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { MovieComponent } from './movie/movie.component';
+import { UserMovieListService } from '../user-movie-list.service';
 @Component({
   selector: 'app-movie-list',
   templateUrl: './movie-list.component.html',
@@ -19,7 +20,10 @@ export class MovieListComponent implements OnInit {
   movieList$: Observable<Movie[]> | undefined;
   selectedMovieId: number | undefined;
   userReview: string | undefined;
-  constructor(private movieApi: MoviesApiService) {}
+  constructor(
+    private movieApi: MoviesApiService,
+    private userMovies: UserMovieListService
+  ) {}
   ngOnInit() {
     this.movieList$ = this.movieApi.getSavedMovies();
     this.movieApi.getSavedMovies().subscribe((d) => console.log(d));

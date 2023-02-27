@@ -1,0 +1,22 @@
+.stars-container {
+  display: inline-block;
+  margin: 0.6rem 0.4rem 0.6rem 0;
+  cursor: pointer;
+  span {
+    color: rgb(221, 218, 218);
+    transition: scale 0.1s;
+    &.active {
+      color: yellow;
+    }
+    &:hover {
+      transition: scale 0.1s;
+    }
+    &.hovered {
+      color: rgb(201, 201, 7);
+      scale: 1.2;
+      &.self {
+        scale: 1.2;
+      }
+    }
+  }
+}

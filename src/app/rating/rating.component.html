@@ -1,0 +1,14 @@
+<div
+  *ngFor="let star of maxRating; let i = index"
+  class="stars-container"
+  (mouseenter)="enter(i)"
+  (mouseout)="leave(i)"
+  (click)="select(i)"
+>
+  <span
+    class="fa-solid fa-star"
+    [ngClass]="getStarClass(i)"
+    [class.self]="isHovered(i)"
+  ></span>
+</div>
+<span>{{ rating }}/{{ stars }}</span>

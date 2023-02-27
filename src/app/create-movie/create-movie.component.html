@@ -1,0 +1,135 @@
+<button routerLink="" class="navigateBtn">
+  <i class="fa-solid fa-backward"></i>
+  <span>Go back</span>
+</button>
+<button type="button" routerLink="/usermovies" class="navigateBtn">
+  <span>User Movies:</span>
+</button>
+<div class="form-container">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Movie Name:</label>
+      <input type="text" id="name" formControlName="name" />
+    </div>
+    <div *ngIf="form.controls['name'].errors && form.controls['name'].dirty">
+      <div
+        class="validation-message"
+        *ngIf="form.controls['name'].errors['minlength']"
+      >
+        Movie name min length is 3
+      </div>
+      <div
+        class="validation-message"
+        *ngIf="form.controls['name'].errors['maxlength']"
+      >
+        Movie name max length is 20
+      </div>
+      <div
+        class="validation-message"
+        *ngIf="form.controls['name'].errors['required']"
+      >
+        Movie name is required
+      </div>
+      <div
+        class="validation-message"
+        *ngIf="form.controls['name'].errors['nameExists']"
+      >
+        This movie already exsists
+      </div>
+    </div>
+    <label>Countries:</label>
+    <div formArrayName="countries" class="form-container__select-countries">
+      <div
+        *ngFor="
+          let countryControl of form.controls.countries.controls;
+          let i = index
+        "
+      >
+        <select [formControl]="countryControl">
+          <option [value]="null" hidden>Select country</option>
+          <option [value]="country" *ngFor="let country of countries">
+            {{ country }}
+          </option>
+        </select>
+      </div>
+      <button type="button" (click)="addCountry()" [disabled]="plusBtnDisabled">
+        +
+      </button>
+    </div>
+    <div>
+      <label for="premiere">Premiere place:</label>
+      <input type="text" id="premiere" formControlName="premierePlace" />
+    </div>
+    <div *ngIf="form.controls['premierePlace']?.errors">
+      <div
+        class="validation-message"
+        *ngIf="(form.controls['premierePlace']?.errors)!['premierePlaceError']"
+      >
+        Population in this country is less than 50 000 000
+      </div>
+    </div>
+    <div>
+      <label for="date">Release Date:</label>
+      <input type="date" id="date" formControlName="date" />
+    </div>
+    <div *ngIf="form.controls['date'].errors && form.controls['date'].dirty">
+      <div
+        class="validation-message"
+        *ngIf="form.controls['date'].errors['pastDate']"
+      >
+        The event can't be held in past
+      </div>
+    </div>
+    <div>
+      <label>Choose genres:</label>
+      <div *ngFor="let genre of genres; let i = index">
+        <input
+          type="checkbox"
+          formArrayName="genres"
+          [value]="genre"
+          (change)="onCheckboxChange($event)"
+        />{{ genre }}
+      </div>
+    </div>
+    <div>
+      <label>Type:</label>
+      <div>
+        <input
+          type="radio"
+          id="movie"
+          formControlName="type"
+          [value]="typeOfMovie.Movie"
+        />
+        <label for="movie">Movie</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="tv-show"
+          formControlName="type"
+          [value]="typeOfMovie.TvShow"
+        />
+        <label for="tv-show">Tv-show</label>
+      </div>
+    </div>
+    <div *ngIf="form.controls['minutesOf']">
+      <label for="duration">Duration of film:</label>
+      <input type="number" id="duration" formControlName="minutesOf" />
+    </div>
+    <!-- <div *ngIf="form.controls['minutesOf']?.errors['min']"></div> -->
+    <div *ngIf="form.controls['numberOfSeries']">
+      <label for="episodes">Number of Episodes:</label>
+      <input type="number" id="episodes" formControlName="numberOfSeries" />
+    </div>
+    <div>
+      <div>Rate:</div>
+      <app-rating formControlName="rating"></app-rating>
+    </div>
+    <button type="submit" [disabled]="!form.valid">
+      <span>Submit</span>
+    </button>
+    <!-- <button type="submit">
+      <span>Submit</span>
+    </button> -->
+  </form>
+</div>

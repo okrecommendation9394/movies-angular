@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { SearchComponent } from './search/search.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { MovieComponent } from './movie-list/movie/movie.component';
+import { CreateMovieComponent } from './create-movie/create-movie.component';
+import { UsermovieListComponent } from './usermovie-list/usermovie-list.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
   {
     path: 'list/:name',
     component: MovieComponent,
+  },
+  {
+    path: 'create-movie',
+    component: CreateMovieComponent,
+  },
+  {
+    path: 'usermovies',
+    component: UsermovieListComponent,
   },
 ];
 

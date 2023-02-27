@@ -2,61 +2,77 @@
   <i class="fa-solid fa-backward"></i>
   <span>Go back</span>
 </button>
-<div class="movies-container">
-  <div class="movies-container__movie" *ngFor="let movie of movieList$ | async">
-    <div class="movies-container__title">{{ movie.Title }}</div>
-    <div class="movies-container__year">{{ movie.Year }}</div>
-    <div class="movies-container__poster">
-      <img src="{{ movie.Poster }}" alt="" />
-      <div class="movies-container__info">
-        <div *ngIf="selectedMovieId == movie.id">
-          <div class="review">
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Your review"
-              [(ngModel)]="userReview"
-            ></textarea>
-            <button type="button" (click)="addReview(movie.id, movie)">
-              Send
-            </button>
+<ng-container *ngIf="movieList$ | async as MovieList">
+  <div *ngIf="MovieList.length; else noMovies">
+    <div class="movies-container">
+      <div
+        class="movies-container__movie"
+        *ngFor="let movie of movieList$ | async"
+      >
+        <div class="movies-container__title">{{ movie.Title }}</div>
+        <div class="movies-container__year">{{ movie.Year }}</div>
+        <div class="movies-container__poster">
+          <img src="{{ movie.Poster }}" alt="" />
+          <div class="movies-container__info">
+            <div *ngIf="selectedMovieId == movie.id">
+              <div class="review">
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Your review..."
+                  [(ngModel)]="userReview"
+                ></textarea>
+                <button type="button" (click)="addReview(movie.id, movie)">
+                  Send
+                </button>
+              </div>
+            </div>
+            <div
+              *ngIf="movie.UserReview && selectedMovieId! !== movie.id"
+              class="movies-container__review"
+            >
+              <div><span>Your review:</span> {{ movie.UserReview }}</div>
+              <button (click)="deleteReview(movie)">Delete Review</button>
+            </div>
+            <div class="movies-container__imdb">
+              <span>Audience Score: </span>{{ movie.imdbRating
+              }}<i class="fa-solid fa-star"></i>
+            </div>
+            <div class="movies-container__plot">
+              <span>Plot: </span>{{ movie.Plot }}
+            </div>
           </div>
         </div>
-        <div
-          *ngIf="movie.UserReview && selectedMovieId! !== movie.id"
-          class="movies-container__review"
+        <div class="movies-container__buttons">
+          <button type="button" (click)="enableReview(movie.id)">
+            <span *ngIf="selectedMovieId! !== movie.id">Add Review</span>
+            <span *ngIf="selectedMovieId == movie.id">Cancel Review</span>
+            <i class="fa-sharp fa-solid fa-comment-plus"></i>
+          </button>
+          <button
+            class="movies-container__buttons__info"
+            [routerLink]="['/list', movie.Title]"
+          >
+            <i class="fa-solid fa-info"></i>
+          </button>
+        </div>
+        <button
+          class="movies-container__delete"
+          (click)="deleteMovie(movie.id)"
         >
-          <div><span>Your review:</span> {{ movie.UserReview }}</div>
-          <button (click)="deleteReview(movie)">Delete Review</button>
-        </div>
-        <div class="movies-container__imdb">
-          <span>Audience Score: </span>{{ movie.imdbRating
-          }}<i class="fa-solid fa-star"></i>
-        </div>
-        <div class="movies-container__plot">
-          <span>Plot: </span>{{ movie.Plot }}
-        </div>
+          <i class="fa-solid fa-trash"></i>
+          <span>Delete</span>
+        </button>
       </div>
     </div>
-    <div class="movies-container__buttons">
-      <button type="button" (click)="enableReview(movie.id)">
-        <span *ngIf="selectedMovieId! !== movie.id">Add Review</span>
-        <span *ngIf="selectedMovieId == movie.id">Cancel Review</span>
-        <i class="fa-sharp fa-solid fa-comment-plus"></i>
-      </button>
-      <button
-        class="movies-container__buttons__info"
-        [routerLink]="['/list', movie.Title]"
-      >
-        <i class="fa-solid fa-info"></i>
-      </button>
-    </div>
-    <button class="movies-container__delete" (click)="deleteMovie(movie.id)">
-      <i class="fa-solid fa-trash"></i>
-      <span>Delete</span>
-    </button>
   </div>
-</div>
+</ng-container>
+<ng-template #noMovies>
+  <div class="no-movie">
+    <h3>The List Is Empty</h3>
+    <i class="fa-regular fa-empty-set"></i>
+  </div>
+</ng-template>
 <router-outlet></router-outlet>
